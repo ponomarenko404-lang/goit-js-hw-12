@@ -1,0 +1,130 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+
+
+
+.form-container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.search-input {
+  border-radius: 4px;
+    border: 1px solid #808080;
+    width: 272px;
+    background: #fff;
+    margin-right: 8px;
+    padding: 8px 16px;
+    transition: border-color 250ms ease-in-out;
+
+    font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #808080;
+}
+
+.search-input:hover {
+border: 1px solid #000;
+}
+
+.search-input:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+.search-btn {
+      border-radius: 8px;
+        padding: 8px 16px;
+        width: 91px;
+
+        transition: background-color 250ms ease-in-out;
+        
+        background-color: #4e75ff;
+        border: none;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: .04em;
+        color: #fff;
+}
+
+.search-btn:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48) / 3);
+  border: 1px solid #808080;
+  position: relative;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2),
+    0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 250px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.info-text {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.info-list {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 320px;
+  padding: 4px 20px;
+  gap: 29px;
+  justify-content: center;
+}
+
+
+.info-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+
